@@ -39,9 +39,8 @@ try:
 
         image = np.reshape(image, (144, 176, 3))  # QCIF resolution
 
-        plt.imsave(f"image_{i}.jpg", image)
+        plt.imsave(f"images//image_{i}.jpg", image)
         i += 1  # Increment the filename index for each iteration
 
 except KeyboardInterrupt:
     ser.close()
-
